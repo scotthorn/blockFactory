@@ -1,0 +1,228 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* General Styles */
+* {
+    font-family: Helvetica, Arial, Sans-serif;
+}
+.clearfix:after {
+    content: ',';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.table {
+    display: table;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+}
+.middle {
+  vertical-align: middle;
+}
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.42em;
+  margin-bottom: 0.25em;
+}
+
+/* Basic Page Sections */
+html, body, #page {
+  background: #444;
+  height: 100%;
+}
+#game-wrapper {
+  height: 360px;
+  width: 640px;
+  background: #000;
+  margin: auto;
+}
+
+#game {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+#game a {
+  color: white;
+}
+
+.scene {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.scene.active {
+  display: block;
+}
+.scene-start,
+.scene-win,
+.scene-lose {
+  text-align: center;
+  font-size: 21px;
+}
+
+#toggles {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: white;
+  /* */
+  display: none;
+}
+#toggles a,
+#toggles i {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#boxes-wrapper {
+  padding-top: 91px;
+  position: relative;
+  overflow: hidden;
+  height: 67px;
+  margin-left: 6%;
+}
+#boxes {
+  height: 42px;
+  position: absolute;
+  left: 70%;
+  width: 1000000px;
+  transition: left 0.2s;
+}
+#boxes .box {
+  height: 42px;
+  width: 42px;
+  border: solid 2px white;
+  box-shadow: 0 0 1px -1px rgba(255,255,255,0.4);
+  display: inline-block;
+  margin-right: 21px;
+  position: relative;
+}
+#boxes .box .prime {
+  position: absolute;
+  bottom: 1px;
+  right: 3px;
+  font-size: 11px;
+  color: white;
+}
+#rail {
+  width: 100%;
+  height: 21px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255,100,100,0.4);
+}
+
+#numbers {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 2px white;
+}
+#fraction {
+  width: 58%;
+}
+#numerator,
+#denominator {
+  height: 63px;
+  color: white;
+}
+#denominator {
+  border-top: solid 2px white;
+}
+.label {
+  font-size: 13px;
+  display: inline-block;
+  width: 20%;
+  margin-left: 1em;
+}
+#numerator .label {
+  vertical-align: bottom;
+  padding-top: 42px;
+}
+#denominator .label,
+#denominator .numbers {
+  vertical-align: top;
+  padding-top: 9px;
+}
+#numerator .numbers {
+
+}
+#fraction .numbers {
+  width: 75%;
+  text-align: center;
+  display: inline-block;
+  font-size: 37px;
+}
+#denominator .numbers .number {
+  display: inline-block;
+}
+#denominator .numbers .number sup {
+  font-size: 16px;
+  vertical-align: top;
+}
+#denominator .numbers .number:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin: 0 1em 0 0.75em;
+  font-size: 12px;
+  vertical-align: middle;
+}
+#denominator .numbers .number:first-of-type:before {
+  display: none;
+}
+
+#result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  border-left: solid 2px white;
+  font-size: 63px;
+  line-height: 128px;
+  text-align: center;
+}
+
+
+
+/* Begin Responsive */
+
+@media screen and (max-width: 959px) {
+}
+
+@media screen and (max-width: 799px) {
+}
+
+@media screen and (max-width: 699px) {
+}
+
+@media screen and (max-width: 599px) {
+}
+
+@media screen and (max-width: 499px) {
+}

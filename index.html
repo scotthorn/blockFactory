@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Client Name</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="page">
+    <div class="table full-height full-width"><div class="table-row"><div class="table-cell middle">
+      <div id="game-wrapper">
+        <div id="game">
+
+          <section class="scene scene-start active">
+            <div class="table full-height full-width"><div class="table-row"><div class="table-cell middle">
+              <h1><a class="start">Start Game</a></h1>
+              <p>Click on prime factors until you reach 1!</p>
+            </div></div></div>
+          </section>
+          
+          <section class="scene scene-main-game">
+
+            <div id="toggles">
+              <i id="menu-toggle" class="fa fa-bars"></i>
+              <a id="references-toggle">?</a>
+            </div>
+
+            
+            <div id="boxes-wrapper">
+              <div id="boxes">
+              </div>
+              <div id="rail"></div>
+            </div>
+
+            <div id="numbers">
+              <div id="fraction">
+                <div id="numerator">
+                  <div class="label">Boxes</div>
+                  <div class="numbers"></div>
+                </div>
+                <div id="denominator">
+                  <div class="label">Groups</div>
+                  <div class="numbers">
+                  </div>
+                </div>
+              </div>
+              <div id="result"></div>
+            </div>
+
+          </section>
+
+          <section class="scene scene-win">
+            <div class="table full-height full-width"><div class="table-row"><div class="table-cell middle">
+              <h1>You Win!</h1>
+              <a class="start">Play Again</a>
+            </div></div></div>
+          </section>
+
+          <section class="scene scene-lose">
+            <div class="table full-height full-width"><div class="table-row"><div class="table-cell middle">
+              <h1>You Lose!</h1>
+              <a class="start">Play Again</a>
+            </div></div></div>
+          </section>
+
+        </div>
+      </div>
+    </div></div></div>
+  </div>
+</body>
+</html>
